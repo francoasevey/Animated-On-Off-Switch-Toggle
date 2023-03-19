@@ -21,6 +21,7 @@
     display: block;
     cursor: pointer;
     opacity: 0;
+    z-index: 1;
 }
 .checkbox-btn div{
     position: absolute;
@@ -39,4 +40,8 @@
     width: 40px;
     height: 40px;
     background: #000;
+    transition: 0.5s;
+}
+.checkbox-btn input:checked + div .slide{
+    transform: translateX(60px);
 }
