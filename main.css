@@ -45,3 +45,29 @@
 .checkbox-btn input:checked + div .slide{
     transform: translateX(60px);
 }
+.checkbox-btn .slide:before{
+    content: 'ON';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    text-align: center;
+    width: 60px;
+    height: 100%;
+    line-height: 40px;
+    background: #00da00;
+    font-weight: bold;
+    color: #fff;
+}
+.checkbox-btn .slide:after{
+    content: 'OFF';
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-align: center;
+    width: 60px;
+    height: 100%;
+    line-height: 40px;
+    background: #ff002d;
+    font-weight: bold;
+    color: #fff;
+}
